@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1f0229e518.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/icon.png">
+    <title>Document</title>
+</head>
+<body>
+<div class="portada"></div>
+<!-- <h1>ZAC.TECH</h1>   -->
+<h2>Tienda de artículos gaming</h2>
+
+<hr>
+
+<header>
+    <div class = "todoFiltros">
+        <p class="filtros">Filtrar por:</p>
+        <select id="selecTipos">
+            <option value="todos">Todos</option>
+            <option value="notebook">Notebooks</option>
+            <option value="cpu">Cpu</option>
+            <option value="monitor">Monitores</option>
+            <option value="teclado">Teclados</option>
+            <option value="mouse">Mouse</option>
+            <option value="auriculares">Auriculares</option>
+            <option value="camara">Cámaras</option>
+            <option value="microfono">Micrófonos</option>
+        </select>
+    </div>
+    
+    <a href="#modal"><i class="fa-solid fa-cart-shopping"></i><span id="contadorCarrito">0</span></a>
+
+    <nav class="ingresarIndex">
+        <a href=pages/ingresar.html>Ingresar</a>
+    </nav>
+</header>   
+
+<hr>
+
+<div id="modal" class = "modal">
+    <div class = "modal-contenedor">
+        <h6>Carrito</h6>
+        <button id = "carritoCerrar"><a href="#"><i class="fa-solid fa-xmark"></i></a></button>
+        <div id = "carrito-contenedor"></div>   
+        <p class = "precioProducto"> Precio total: $<span id="precioTotal"></span></p>
+        <button class="comprar"><a href=pages/ingresar.html>Comprar</a></button>
+    </div> 
+</div>
+
+<main class="contenedor">
+    <div class="contenedor-productos">
+        <div id="lista"></div>
+
+    </div>
+</main>
+
+<footer>
+    <p class="pFooter">Lorem ipsum dolor sit amet consectetur adipisicing elit. IsteA alias cumque ipsa quasi, architecto iure voluptatem nihil doloremque incidunt quaerat, mollitia non doloribus, vitae temporibus a eum. Repudiandae, sequi sint!</p>
+    <nav>
+        <ul class="footerList">
+            <li>
+                <a href="https://www.instagram.com/">
+                    <i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/">
+                    <i class="fab fa-twitter"></i></a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+<script src="./js/obj.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
